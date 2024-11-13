@@ -1,6 +1,6 @@
 module Dropkiq
   class DropMethodAnalyzer
-    CHANGEME = "CHANGEME"
+    CHANGEME = "ColumnTypes::String"
 
     attr_accessor :drop_class_analyzer, :drop_method,
       :dropkiq_type, :foreign_table_name, :sample_drop
@@ -106,8 +106,6 @@ module Dropkiq
         Dropkiq::DATE_TIME_TYPE
       when :binary
         Dropkiq::NUMERIC_TYPE
-      else
-        Dropkiq::STRING_TYPE
       end
     end
   end

@@ -106,6 +106,8 @@ module Dropkiq
         Dropkiq::DATE_TIME_TYPE
       when :binary
         Dropkiq::NUMERIC_TYPE
+      else
+        Dropkiq::STRING_TYPE
       end
     end
   end
